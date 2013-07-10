@@ -1,0 +1,209 @@
+body {
+  background-color: silver;
+  color: #333;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding: 40px;
+}
+
+.wideBox {
+  clear: both;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 10px;
+  background: #ebedf2;
+  border: 1px solid #333;
+  line-height: 80%;
+}
+
+#container {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+#chart, #chartData {
+  border: 1px solid #333;
+  /*background: #ebedf2 url("images/gradient.png") repeat-x 0 0;*/
+  background-color: #F0FAFC;
+}
+
+#chart {
+  display: block;
+  margin: 0 0 50px 0;
+  float: left;
+  cursor: pointer;
+}
+
+#chartData {
+  width: 360px;
+  margin: 0 0 0 0;
+  float: right;
+  border-collapse: collapse;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  /*background-position: 0 -100px;*/
+    font-family: sans-serif,Arial,Verdana,Helvetica;
+    font-size: 12px;
+}
+
+#chartData th, #chartData td {
+  padding: 0.35em;
+  /*border: 1px dotted #666;*/
+  text-align: left;
+}
+
+#chartData th {
+  border-bottom: 2px solid #333;
+  /*text-transform: uppercase;*/
+}
+
+
+
+#chartData tr.group_expanded,#chartData tr.element_expanded {
+	background-color: white;
+}
+#chartData tr.element_collapsed {
+	display: none;
+	visibility: hidden;
+}
+
+/* Expander: closed */
+#chartData tr.group_collapsed td div.expander {
+	border-color: #868686 transparent transparent transparent; /*top*/
+	border-style: solid;
+	border-width: 7px;
+	height: 0px;
+	width: 0px;
+	top: 4px;
+	position: relative;
+}
+/* Expander: expanded */
+#chartData tr.group_expanded td div.expander {
+	border-color: transparent transparent transparent #868686; /*left*/
+	border-style: solid;
+	border-width: 7px;
+	height: 0px;
+	width: 0px;
+	left: 4px;
+	position: relative;
+}
+
+/* Main style for color box */
+#chartData tr.element_expanded td div.color_box {
+	width: 9px;
+	height: 9px;
+	display: block;
+	border: 1px solid black;
+}
+#chartData tr.group_expanded td div.color_box {
+	width: 0;
+	height: 0;
+	/*display: none;*/
+	visibility: hidden;
+}
+
+/* Diferent styles for each slice: START */
+#chartData tr.element_expanded:nth-child(1) td div.color_box,#chartData tr.group_collapsed:nth-child(1) td div.color_box {
+	background-color: #24bedd;
+}
+
+#chartData tr.element_expanded:nth-child(2) td div.color_box,#chartData tr.group_collapsed:nth-child(2) td div.color_box {
+	background-color: #147487;
+}
+
+#chartData tr.element_expanded:nth-child(3) td div.color_box,#chartData tr.group_collapsed:nth-child(3) td div.color_box {
+	background-color: #ffd301;
+}
+
+#chartData tr.element_expanded:nth-child(4) td div.color_box,#chartData tr.group_collapsed:nth-child(4) td div.color_box {
+	background-color: #8dc731;
+}
+
+#chartData tr.element_expanded:nth-child(5) td div.color_box,#chartData tr.group_collapsed:nth-child(5) td div.color_box {
+	background-color: #f7941d;
+}
+
+#chartData tr.element_expanded:nth-child(6) td div.color_box,#chartData tr.group_collapsed:nth-child(6) td div.color_box {
+	background-color: #93ddfb;
+}
+
+#chartData tr.element_expanded:nth-child(7) td div.color_box,#chartData tr.group_collapsed:nth-child(7) td div.color_box {
+	background-color: #662d91;
+}
+
+#chartData tr.element_expanded:nth-child(8) td div.color_box,#chartData tr.group_collapsed:nth-child(8) td div.color_box {
+	background-color: #f26522;
+}
+
+#chartData tr.element_expanded:nth-child(9) td div.color_box,#chartData tr.group_collapsed:nth-child(9) td div.color_box {
+	background-color: #c4df9b;
+}
+
+#chartData tr.element_expanded:nth-child(10) td div.color_box,#chartData tr.group_collapsed:nth-child(10) td div.color_box {
+	background-color: #1cbbb4;
+}
+
+#chartData tr.element_expanded:nth-child(11) td div.color_box,#chartData tr.group_collapsed:nth-child(11) td div.color_box {
+	background-color: #699bee;
+}
+
+#chartData tr.element_expanded:nth-child(12) td div.color_box,#chartData tr.group_collapsed:nth-child(12) td div.color_box {
+	background-color: #ee7487;
+}
+
+#chartData tr.element_expanded:nth-child(13) td div.color_box,#chartData tr.group_collapsed:nth-child(13) td div.color_box {
+	background-color: #89e154;
+}
+
+#chartData tr.element_expanded:nth-child(14) td div.color_box,#chartData tr.group_collapsed:nth-child(14) td div.color_box {
+	background-color: #eec731;
+}
+
+#chartData tr.element_expanded:nth-child(15) td div.color_box,#chartData tr.group_collapsed:nth-child(15) td div.color_box {
+	background-color: #c77717;
+}
+
+#chartData tr.element_expanded:nth-child(16) td div.color_box,#chartData tr.group_collapsed:nth-child(16) td div.color_box {
+	background-color: #937bfb;
+}
+
+#chartData tr.element_expanded:nth-child(17) td div.color_box,#chartData tr.group_collapsed:nth-child(17) td div.color_box {
+	background-color: #ee2d91;
+}
+
+#chartData tr.element_expanded:nth-child(18) td div.color_box,#chartData tr.group_collapsed:nth-child(18) td div.color_box {
+	background-color: #bb4e1a;
+}
+
+#chartData tr.element_expanded:nth-child(19) td div.color_box,#chartData tr.group_collapsed:nth-child(19) td div.color_box {
+	background-color: #eedf9b;
+}
+
+#chartData tr.element_expanded:nth-child(20) td div.color_box,#chartData tr.group_collapsed:nth-child(20) td div.color_box {
+	background-color: #af8ca3;
+}
+/* Diferent styles for each slice: END */
+
+#chartData td {
+  cursor: pointer;
+}
+
+/*#chartData td.highlight {
+  background: #e8e8e8;
+}*/
+
+/*#chartData tr:hover td {
+  //background: #f0f0f0;
+  background: #f0f0f0;
+}*/
+#chartData tr.highlight {
+  background: #e8e8e8;
+}
+#chartData tr:hover {
+  background-color: #f0f0f0;
+}
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
