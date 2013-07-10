@@ -1,0 +1,366 @@
+/* remove all default browser padding etc. */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* font: 100%/1.4 Arial, Verdana, Helvetica, sans-serif; */
+	font: 0.8em Helvetica, Arial, Verdana, sans-serif;
+	background: white;
+	margin: 0;
+	padding: 0;
+	color: #464646;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+}
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 18px;
+	font-weight: bold;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #00b1da;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+	/*font-weight: bold;*/
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+}
+
+hr {
+	color: #ebebeb;
+	margin-bottom: 20px;
+}
+
+/* ~~ Buttons ~~ */
+button.sprites_button {
+	background-image: url(../images/sprites.png);
+	border: 0px;
+	background-color: transparent;
+}
+button.secure {
+	background-position: 2px 0px;
+	width: 23px;
+	height: 30px;
+}
+button.login {
+	background-position: 0 -40px;
+	width: 95px;
+	height: 30px;
+	cursor: pointer;
+}
+button.singup {
+	background-position: 0 -81px;
+	width: 95px;
+	height: 30px;
+	cursor: pointer;
+}
+button.get_started {
+	background-position: 0 -124px;
+	width: 234px;
+	height: 38px;
+	cursor: pointer;
+}
+
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+
+div.header_container {
+	height: 88px;
+	background-image: url(../images/header_bg.png);
+	background-repeat: repeat-x;
+	padding-bottom: 9px;
+}
+
+header {
+	width: 937px;
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+header .logo {
+	float: left;
+	width: 202px;
+	padding-top: 16px;
+}
+
+header .header_content {
+	float: right;
+	width: 730px;
+}
+header .header_content .user_block {
+	height: 31px;
+	padding-top: 9px;
+	display: block;
+	text-align: right;
+}
+header .header_content nav {
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container {
+	width: 937px;
+	background: #FFFFFF;
+	background-image: url(../images/container_bg.png);
+	background-repeat: repeat-y;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the block elements. The elements within these blocks have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the block itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the block element and place a second block element within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a block set to float right). Many times, padding can be used instead. For blocks where this rule must be broken, you should add a "display:inline" declaration to the block element's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar blocks could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the blocks around in the HTML source.
+
+*/
+.sidebar1 {
+	padding-top: 15px;
+	clear: both;
+	width: 209px;
+	float: left;
+}
+.sidebar1 h2 {
+	font-size: 15px;
+	padding-left: 22px;
+}
+.sidebar1 .panel_content h2,.sidebar1 .panel_content p {
+	padding-left: 18px;
+}
+
+
+.sidebar1 .closed_panel_title {
+	width: 100%;
+	padding-top: 5px;
+}
+.sidebar1 .open_panel_title {
+	width: 100%;
+	height: 27px;
+	padding-top: 5px;
+	background-image: url(../images/bullet.png), url(../images/panel_title_bg.png);
+	background-repeat: no-repeat,repeat-x;
+	background-position: 194px center, 0 0;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+	color: white;
+}
+
+.sidebar1 .panel_title {
+	width: 100%;
+	height: 27px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	color: #9A9A9A;
+}
+.sidebar1 .panel_content {
+	width: 202px;
+	padding-bottom: 27px;
+	border-bottom: 6px solid white;
+	color: #9A9A9A;
+}
+.content_notes {
+	background-color: white;
+	text-align: right;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.content {
+	/* padding: 10px 0; */
+	padding-left: 18px;
+	width: 710px; /* 730-18 */
+	float: right;
+}
+.content h1 {
+	padding: 10px 10px 20px 24px;
+}
+.content h2 {
+	padding: 50px 30px 20px 24px;;
+}
+.content p {
+	padding: 0 10px 18px 24px; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+}
+.content section .left_section {
+	width: 277px; /* 295-18 */
+	clear: both;
+	float: left;
+}
+.content section .right_section {
+	width: 403px; /* 433-30 */
+	float: right;
+	padding-left: 30px;
+}
+.content_bottom {
+	clear: both;
+	position: relative;
+}
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+header nav {
+	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	float: right;
+}
+header nav ul {
+	list-style-type: none;
+	height: 42px;
+	line-height: 42px;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	border-left: 2px solid black;
+	-moz-border-image:url(../images/header_menu_splitter.png) 30 0 30 30 round; /* Firefox */
+	-webkit-border-image:url(../images/header_menu_splitter.png) 30 0 30 30 round; /* Safari and Chrome */
+	border-image:url(../images/header_menu_splitter.png) 30 0 30 30 round;
+	padding-right: 12px;
+	padding-left: 12px;
+	display: block;
+	/* line-height: 40px; */
+	text-decoration: none;
+	font-size: 18px;
+	color: white !important;
+	/*font-weight: bold;*/
+	text-shadow: 1px 1px 3px #454545;
+}
+header nav ul li:last-child a {
+	border-right: 2px solid black;
+	-moz-border-image:url(../images/header_menu_splitter.png) 30 30 30 30 round; /* Firefox */
+	-webkit-border-image:url(../images/header_menu_splitter.png) 0 30 0 30 round; /* Safari and Chrome */
+	border-image:url(../images/header_menu_splitter.png) 30 30 30 30 round;
+}
+
+header nav ul li a:hover {
+	/*background-image: url(../images/header_menu_hover_bg.png);*/
+	background-repeat: no-repeat;
+	background-position: center 32px;
+	text-decoration: none;
+	color: #edd314 !important;
+}
+header nav ul li a.open {
+	background-image: url(../images/header_menu_open_bg.png);
+	background-repeat: no-repeat;
+	background-position: center 18px;
+	text-decoration: none;
+}
+
+/* ~~ The [SIDEBAR] navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+.sidebar1 nav.blogs ul {
+	list-style: none; /* this removes the list marker */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+.sidebar1 nav.blogs ul li {
+	/* border-bottom: 1px solid #666;*/ /* this creates the button separation */
+}
+.sidebar1 nav.blogs ul a,.sidebar1 nav.blogs ul a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 9px 5px 9px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 182px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	font-weight: normal;
+	color: #464646;
+}
+.sidebar1 nav.blogs ul a:hover, .sidebar1 nav.blogs ul a:active, .sidebar1 nav.blogs ul a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ The [SIDEBAR] navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+.sidebar1 nav.follow ul {
+	list-style: none; /* this removes the list marker */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+.sidebar1 nav.follow ul li {
+	/* border-bottom: 1px solid #666;*/ /* this creates the button separation */
+}
+.sidebar1 nav.follow ul a,.sidebar1 nav.follow ul a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	background-image: url(../images/sprites.png);
+	padding: 9px 5px 9px 60px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 137px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	font-weight: normal;
+	color: #464646;
+}
+.sidebar1 nav.follow ul a:hover, .sidebar1 nav.follow ul a:active, .sidebar1 nav.follow ul a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #ADB96E;
+	color: #FFF;
+}
+.follow ul a.twitter {
+	background-position: 18px -169px;
+}
+.follow ul a.facebook {
+	background-position: 18px -214px;
+}
+.follow ul a.feed {
+	background-position: 18px -257px;
+}
+
+/* ~~ The footer ~~ */
+div.footer_container {
+	height: 186px;
+    background-position: 0 37px;
+	background-image: url(../images/footer_bg.png);
+	background-repeat: repeat-x;
+	padding-top: 37px;
+	background-color: white;
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+footer {
+	width: 937px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	height: 168px; /* 186-18 */
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	padding: 18px 25px 0 25px;
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	text-align: center;
+	font-size: 12px;
+}
+footer address {
+	font-size: 11px;
+	font-style: normal; 
+	color: #858585;
+}
+footer p {
+	padding: 6px 0 6px 0;
+}
+
+footer nav a:link, footer nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	color: #858585;
+	text-decoration: none;
+	font-weight: normal;
+}
+footer nav a:hover, footer nav a:active, footer nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	color: #FFF;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
