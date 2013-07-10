@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+.red_text {
+	color: #ff0000;
+}
+.debug_text {
+	color: gray;
+	text-decoration: italic;
+}
+.failed {
+	color: red;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.passed {
+	color: green;
+	font-weight: bold;
+	text-transform: lowercase;
+}
