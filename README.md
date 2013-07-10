@@ -3,7 +3,7 @@ ProgrammingAssignments
 
 My Solved Programming assignments / tasks for Silicon Valley companies to show skills
 
-Please read the '**Programming assignment - answers.pdf**' document first.
+Please read the ' **Programming assignment - answers.pdf** ' document first.
 
 The for gRaphael/Visual tasks please check:
 
