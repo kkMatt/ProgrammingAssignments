@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+.red_text {
+	color: #ff0000;
+}
+.no_display {
+	display: none;
+}
+.dates {
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: underline;
+}
