@@ -1,0 +1,11 @@
+Please refer to the Media RSS feed at this URL: http://vodo.net/feeds/public
+
+Create a single web page which consumes this feed and presents it as an attractive list of well-formatted feed entries, including item metadata.
+
+Create a PHP script which consumes the MRSS feed and outputs JSON, then write a JavaScript front end to consume and render the JSON. 
+
+When the user clicks on a particular feed entry in the list, they should be presented with a "detail view" for that entry including more complete metadata. Use your judgment to come up with a usable solution.
+
+Feel free to make use of existing libraries which might be helpful.
+
+Be advised that your solution will be graded based on simplicity, maintainability, and use of appropriate markup.
