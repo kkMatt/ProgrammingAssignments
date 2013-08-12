@@ -55,7 +55,7 @@ function createBasicInfo (jsonElement)
 	$('section.main').empty();
 	$('section.main').append('<h2>' + title + '</h2>');
 	$('section.main').append('<p><strong>Link:</strong> <a href="'+ link +'" target="_blank">' + link.substr(0,50) + '</a></p>');
-	$('section.main').append('<p><strong>Download:</strong> <a href="'+ torrent +'" target="_blank">' + torrent + '</a></p>');
+	$('section.main').append('<p><strong>Download:</strong> <a href="'+ torrent +'" target="_blank">' + torrent.substr(0,50) + '</a></p>');
 	$('section.main').append('<p>Published on <u>' + published + '</u> by <u>' + author + '</u></p>');
 	$('section.main').append('<p><strong>Description:</strong> ' + description + '</p>');
 }
