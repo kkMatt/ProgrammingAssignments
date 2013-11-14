@@ -1,6 +1,6 @@
 /**
  * JS graph generator
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @date - 2011.07.10
  * @updated - 2011.07.12
  * @version - 5.0
