@@ -2,7 +2,7 @@
 /**
  * A minimal unit testing framework
  *
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @version - 1.3
  * @release - 2011.06.19
  * @updated - 2011.06.19
