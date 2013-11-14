@@ -8,7 +8,7 @@
  *	4. Please comment on your implementation, and the tradeoffs you have chosen.
  *	5. Please provide an ability to test.
  *
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @version - 1.0
  * @release - 2011.06.17
  * @updated - never
