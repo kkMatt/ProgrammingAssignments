@@ -2,7 +2,7 @@
 /**
  * A unit test for DuplicateRemover class
  *
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @version - 1.2
  * @release - 2011.06.19
  * @updated - 2011.06.19
