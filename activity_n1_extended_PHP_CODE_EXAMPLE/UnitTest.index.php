@@ -2,7 +2,7 @@
 /**
  * Unit test entry point
  *
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @version - 1.1
  * @release - 2011.06.17
  * @modified - 2011.06.18
