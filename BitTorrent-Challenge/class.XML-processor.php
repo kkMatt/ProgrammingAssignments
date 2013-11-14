@@ -1,6 +1,6 @@
 <?php
 /**
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @date - 2013.08.12
  * @email - kestutis.itsolutions@gmail.com
  * @description - MRSS reader and XML processor
