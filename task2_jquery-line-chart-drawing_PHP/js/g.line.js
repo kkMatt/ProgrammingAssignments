@@ -1,8 +1,8 @@
 /*!
  * g.Raphael 0.4.2 - Charting library, based on Raphaël
  *
- * Rewroten & extended by Kestutis Matuliauskas
- * @author - Kestutis Matuliauskas, Dmitry Baranovskiy
+ * Rewroten & extended by Kestutis ITDev
+ * @author - Kestutis ITdev, Dmitry Baranovskiy
  * @date - 2011.07.10
  * @updated - 2011.07.12
  * @version - 6.0
