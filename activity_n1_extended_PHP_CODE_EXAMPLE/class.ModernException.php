@@ -2,7 +2,7 @@
 /**
  * A nested exception class
  *
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @version - 1.0
  * @release - 2011.06.17
  * @updated - never
