@@ -1,5 +1,5 @@
 /**
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @date - 2013.08.12
  * @email - kestutis.itsolutions@gmail.com
  * @description - JSON printer to HTML5 page. Mouse interaction added
