@@ -2,7 +2,7 @@
 /**
  * A class to remove duplicating elements from array A if they appear in array B
  *
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @version - 1.1
  * @release - 2011.06.17
  * @updated - 2011.06.19
