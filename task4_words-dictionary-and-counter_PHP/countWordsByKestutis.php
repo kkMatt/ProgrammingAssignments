@@ -1,6 +1,6 @@
 <?php
 /**
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @date - 2013.07.25
  * @email - kestutis.itsolutions@gmail.com
  * @description - Count the words
