@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Kestutis Matuliauskas - Nor1, programming assignment, #1 - Program</title>
+<title>Kestutis - Nor1, programming assignment, #1 - Program</title>
 <!-- stylesheets -->
 <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
