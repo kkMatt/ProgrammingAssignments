@@ -34,7 +34,7 @@
   <footer>
     <p>Done</p>
     <address>
-      2011 (C) Kestutis Matuliauskas
+      2011 (C) Kestutis ITDev
     </address>
   </footer>
   <!-- end .container --></div>
