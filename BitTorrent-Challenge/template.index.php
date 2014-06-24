@@ -54,7 +54,7 @@ $(document).ready(function() {
     </section>
     <!-- end .content --></article>
   <footer>
-    <p>2013 (C) Kestutis Matuliauskas</p>
+    <p>2013 (C) Kestutis ITDev</p>
   </footer>
   <!-- end .container --></div>
 </body>
