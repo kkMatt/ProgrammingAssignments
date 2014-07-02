@@ -2,7 +2,7 @@
 /**
  * Remove both existing elements (arrayA, arrayB) from array A
  *
- * @author - Kestutis Matuliauskas
+ * @author - Kestutis ITDev
  * @date - 2011.06.18
  * @version - 1.0
  */
