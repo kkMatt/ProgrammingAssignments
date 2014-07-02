@@ -1,4 +1,4 @@
-__author__ = 'Xamas'
+__author__ = 'Kestutis ITDev'
 __date__ = '06/19/2011'
 __version__ = '1.0'
 
