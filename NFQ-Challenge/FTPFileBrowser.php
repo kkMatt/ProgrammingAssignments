@@ -1,10 +1,11 @@
-<?php
+<?
 /**
  * @Author - Kestutis IT
  * @Version - v1.0
  * @Description - I did not updated this file code since 2007. It just does what I need
 **/
 $startdir = '.';
+$backtositeurl = 'http://nfq.matuliauskas.lt/';
 $showthumbnails = true; 
 $showdirs = true;
 $forcedownloads = false;
@@ -211,7 +212,7 @@ function f(n) {
 <body>
 <div id="container">
   <h1>Failai <?=dirname($_SERVER['PHP_SELF']).'/'.$leadon;?></h1>
-  <div id="breadcrumbs"> <a href="<?=$_SERVER['PHP_SELF'];?>">Pagrindinis</a><br /><a href="http://matuliauskas.lt/nfq/"><b>Grįžti į saitą</b></a>
+  <div id="breadcrumbs"> <a href="<?=$_SERVER['PHP_SELF'];?>">Pagrindinis</a><br /><a href="<?=$backtositeurl;?>"><b>Grįžti į saitą</b></a>
   <?
  	 $breadcrumbs = split('/', $leadon);
   	if(($bsize = sizeof($breadcrumbs))>0) {
