@@ -215,6 +215,15 @@ AddDefaultCharset utf-8
 </IfModule>
 
 # ------------------------------------------------------------------------------
+# | FLIGHT-MICROFRAMEWORK ADDITION                                             |
+# ------------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+# ------------------------------------------------------------------------------
 # | Suppressing / Forcing the `www.` at the beginning of URLs                  |
 # ------------------------------------------------------------------------------
 
