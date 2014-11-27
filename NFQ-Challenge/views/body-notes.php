@@ -23,6 +23,7 @@
             <li>Front-End: Users, user groups are now loaded via remote API [JSON]</li>
             <li>Front-End: JS debugger made (NFQInventoryDebug = true/false;)</li>
             <li>Front-End: JS API call - loading placeholder added ("LOADING..." and CSS3 spinner class [for-future-ref])</li>
+            <li>BigDump SQL file importer added & configured</li>
         </ul>
     </section>
     <section>
@@ -61,6 +62,7 @@
     <h3>More links</h3>
     <ul>
         <li><a href="<?php print Flight::get('BASE'); ?>/FTPFileBrowser.php">Local files browser</a></li>
+        <li><a href="<?php print Flight::get('BASE'); ?>/bigdump/bigdump.php">BigDump importer (FLUSH)</a></li>
         <li><a href="http://flightphp.com/learn">Learn Flight Php</a></li>
         <li><a href="http://verekia.com/initializr/responsive-template">Learn initializr responsive</a></li>
     </ul>
