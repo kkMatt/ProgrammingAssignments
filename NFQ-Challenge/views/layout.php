@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <htmlclass="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="<?php print Flight::get('BASE'); ?>/css/main.css" type="text/css" />
 		<link rel="stylesheet" href="<?php print Flight::get('BASE'); ?>/css/code.css" type="text/css" />
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="<?php print Flight::get('BASE'); ?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -47,13 +47,13 @@
         <div class="footer-container">
             <footer class="wrapper">
                 <h3>2014 (C) Kestutis IT, Twitter: <a href="#">@KestutisIT</a></h3>
-                <p><code><?php printf('Page rendered in %s msecs / Memory usage %s Kibytes',round(1e3*(microtime(TRUE)-Flight::get('id')),2),round(memory_get_usage(TRUE)/1e3,1)); ?></code></p>
+                <p><code><?php printf('Page rendered in %s msecs / Memory usage %s Kibytes',round(1e3*(microtime(TRUE)-Flight::get('TIME')),2),round(memory_get_usage(TRUE)/1e3,1)); ?></code></p>
             </footer>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="<?php print Flight::get('BASE'); ?>/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
-        <script src="js/main.js"></script>
+        <script src="<?php print Flight::get('BASE'); ?>/js/main.js"></script>
     </body>
 </html>

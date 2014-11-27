@@ -3,12 +3,14 @@
         <h1>Users in the system</h1>
         <p>Bellow we list all our users in the system</p>
     </header>
-    <section class="users-holder">
-        <p>Tomas [X]</p>
+    <section class="holder">
+        <div class="users"><p>Tomas [X]</p></div>
     </section>
 </article>
 
 <aside>
     <h3>Groups in the system</h3>
-    <p class="user-groups-holder"></p>
+    <section class="holder">
+        <div class="groups"><p>Group A</p></div>
+    </section>
 </aside>

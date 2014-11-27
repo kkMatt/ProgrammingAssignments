@@ -157,7 +157,19 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+.users div.singleuser {
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+.users div.singleuser:hover {
+    background-color: #F16529;
+}
+.users div.singleuser .usergroups {
+    font-size: 0.9em;
+}
 
 
 
