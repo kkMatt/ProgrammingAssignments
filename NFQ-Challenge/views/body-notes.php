@@ -63,6 +63,5 @@
         <li><a href="<?php print Flight::get('BASE'); ?>/FTPFileBrowser.php">Local files browser</a></li>
         <li><a href="http://flightphp.com/learn">Learn Flight Php</a></li>
         <li><a href="http://verekia.com/initializr/responsive-template">Learn initializr responsive</a></li>
-        <li><a href="<?php print Flight::get('BASE'); ?>/FILES/test.sql">SQL Backup file</a></li>
     </ul>
 </aside>
